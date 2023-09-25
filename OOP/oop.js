@@ -9,5 +9,19 @@ const user = {
     }
 }
 
-console.log(user.userName);
-console.log(user.getUserDetail());
+// console.log(user.userName);
+// console.log(user.getUserDetail());
+
+
+function User(username , isLoggedIn , loginCount)
+{
+    this.username = username;
+    this.isLoggedIn = isLoggedIn;
+    this.loginCount = loginCount;
+
+     return this
+}
+
+
+const userOne  = new User('Vibhanshu',false, 43)
+console.log(userOne);
